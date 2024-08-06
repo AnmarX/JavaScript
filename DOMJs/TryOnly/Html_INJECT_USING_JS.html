@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inject HTML Example</title>
+</head>
+<body>
+<div id="myDiv">
+    <h1>Title</h1>
+</div>
+
+<script>
+    // Create new elements
+    var ul = document.createElement('ul');
+    var li1 = document.createElement('li');
+    var li2 = document.createElement('li');
+
+    // Set text content for new elements
+    li1.textContent = "Item 1";
+    li2.textContent = "Item 2";
+
+    // Append list items to the unordered list
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+
+    // Append the unordered list to the existing div
+    document.getElementById('myDiv').appendChild(ul);
+</script>
+</body>
+</html>
