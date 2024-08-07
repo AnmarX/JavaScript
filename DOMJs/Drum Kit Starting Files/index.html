@@ -14,11 +14,24 @@
       border-radius: 30px;
       width: 80px;
       height: 80px;
+      font-weight: bold;
+      font-size: larger;
     }
 
     body,
     html {
       height: 100%;
+    }
+
+    .sp {
+
+      font-size: 2em;
+      color: white;
+    }
+
+    .spWhite {
+      font-size: 2em;
+      color: black;
     }
   </style>
 
@@ -39,8 +52,21 @@
 
 
     <div class="d-flex flex-wrap justify-content-center gap-1 mt-3">
-      <button class="drum">W</button>
-      <button class="drum">a</button>
+      
+      <div>
+        <button class="position-relative drum">
+          <img class="bi w-100 h-100" src="images/kick.png">
+          <span class="position-absolute mx-auto end-0 top-50 start-0 translate-middle-y sp">W</span></button>
+        </button>
+      </div>
+
+      <div>
+        <button class="position-relative drum">
+          <img class="bi w-100 h-100" src="images/crash.png">
+          <span class="position-absolute mx-auto end-0 top-50 start-0 translate-middle-y spWhite">A</span></button>
+        </button>
+      </div>
+      
       <button class="drum">s</button>
       <button class="drum">d</button>
       <button class="drum">j</button>
