@@ -23,6 +23,7 @@ buttons.forEach((button, index) => {
 
         var buttonText = button.lastElementChild.innerHTML
         makeSound(buttonText.toLowerCase())
+        makeAnimation(buttonText.toLowerCase())
 
     });
 });
@@ -31,6 +32,7 @@ buttons.forEach((button, index) => {
 
 document.addEventListener('keypress', (event) => {
     makeSound(event["key"].toLowerCase())
+    makeAnimation(event["key"].toLowerCase())
 })
 
 
@@ -66,6 +68,25 @@ const makeSound = (key) => {
             break;
 
     }
+}
+
+
+
+const makeAnimation=(key) =>{
+    
+    const buttons = document.querySelectorAll(".AllButtons .drum span")
+        
+    buttons.forEach((span) => {
+        if (span.innerHTML.toLowerCase() === key) {
+            span.parentElement.classList.add("pressed");
+
+            // Remove the class after a short delay
+            setTimeout(() => {
+                span.parentElement.classList.remove("pressed");
+            }, 100);
+        }
+    });
+    
 }
 
 // for (let i=0;i < buttonsLength;i++) {
