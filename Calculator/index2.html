@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div id="calc" class="bg-dark rounded p-3 w-100" style="max-width: 400px;">
+        <input type="text" id="display" class="form-control mb-3 text-left text-white bg-secondary border-0" style="font-size: 2.5em;" readonly>
+
+        <div id="keys">
+            <div class="row mb-2">
+                <div class="col">
+                    <button onclick="handleinput('+')" class="btn btn-warning btn-block rounded-circle p-3">+</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('7')" class="btn btn-secondary btn-block rounded-circle p-3">7</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('8')" class="btn btn-secondary btn-block rounded-circle p-3">8</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('9')" class="btn btn-secondary btn-block rounded-circle p-3">9</button>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button onclick="handleinput('-')" class="btn btn-warning btn-block rounded-circle p-3">-</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('4')" class="btn btn-secondary btn-block rounded-circle p-3">4</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('5')" class="btn btn-secondary btn-block rounded-circle p-3">5</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('6')" class="btn btn-secondary btn-block rounded-circle p-3">6</button>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button onclick="handleinput('*')" class="btn btn-warning btn-block rounded-circle p-3">*</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('1')" class="btn btn-secondary btn-block rounded-circle p-3">1</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('2')" class="btn btn-secondary btn-block rounded-circle p-3">2</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('3')" class="btn btn-secondary btn-block rounded-circle p-3">3</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button onclick="handleinput('/')" class="btn btn-warning btn-block rounded-circle p-3">/</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('0')" class="btn btn-secondary btn-block rounded-circle p-3">0</button>
+                </div>
+                <div class="col">
+                    <button onclick="handleinput('.')" class="btn btn-secondary btn-block rounded-circle p-3">.</button>
+                </div>
+                <div class="col">
+                    <button onclick="calculate()" class="btn btn-secondary btn-block rounded-circle p-3">=</button>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-3">
+                    <button style="width: 100%;" onclick="clearDisplay()" class="btn btn-warning rounded-circle p-3">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="JavaSc.js"></script>
+</body>
+
+</html>
