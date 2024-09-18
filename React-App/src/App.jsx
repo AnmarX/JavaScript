@@ -6,12 +6,20 @@ import Card from './Card.jsx'
 function App() {
 
   return (
-    <>
+    <div className='container justify-content-center align-items-center vh-100'>
+
       <Header></Header>
-      <Card></Card>
+
+      <div className='d-flex justify-content-center flex-wrap'>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </div>
+
       <Food></Food>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 

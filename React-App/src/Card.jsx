@@ -1,9 +1,10 @@
+import './CSS_Card.css'
 
 const Card = () => {
 
     return (
 
-        <div className="card" style={{ width: '17rem' }}>
+        <div className="card" style={{ width: '15rem' }}>
             <img src="https://via.placeholder.com/100" className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
