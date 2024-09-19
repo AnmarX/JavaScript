@@ -2,11 +2,12 @@ import Header from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx'
 import Food from './Components/Food.jsx'
 import Card from './Components/Card.jsx'
+import Button from './Buttons/Button.jsx'
 
 function App() {
 
   return (
-    <div className='container justify-content-center align-items-center vh-100'>
+    <div className='container vh-100'>
 
       <Header></Header>
 
@@ -19,6 +20,9 @@ function App() {
 
       <Food></Food>
       <Footer></Footer>
+      <div className='d-flex justify-content-center'>
+        <Button></Button>
+      </div>
     </div>
   )
 }
