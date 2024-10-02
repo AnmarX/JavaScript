@@ -15,7 +15,7 @@ function Food() {
                         <h3 className="fs-2 text-body-emphasis">Featured title</h3>
                         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                         <a href="#" className="btn btn-primary">
-                            Primary button
+                            {food1}
                         </a>
                     </div>
                 </div>
