@@ -4,6 +4,7 @@ import Food from './Components/Food.jsx'
 import Card from './Components/Card.jsx'
 import Button from './Buttons/Button.jsx'
 import Student from './Student.jsx'
+import UserGretting from './UserGreeting.jsx'
 
 function App() {
 
@@ -12,10 +13,17 @@ function App() {
 
       <Header></Header>
 
+      <div className='d-flex justify-content-center'>
+        <UserGretting isLoggedIn={true} username="nmr"></UserGretting>
+        <UserGretting isLoggedIn={true}></UserGretting>
+      </div>
+
       <div className='d-flex justify-content-center flex-wrap'>
         <Student name="nemo" age={30} isStudent={true} ></Student>
-        <Student name="anmar" age={90} isStudent={false} ></Student>
+        <Student name="anmar" age={90} isStudent={true} ></Student>
         <Student name="bordoga" age={10} isStudent={false} ></Student>
+        <Student></Student>
+
       </div>
 
       <div className='d-flex justify-content-center flex-wrap'>
