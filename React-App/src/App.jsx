@@ -5,6 +5,7 @@ import Card from './Components/Card.jsx'
 import Button from './Buttons/Button.jsx'
 import Student from './Student.jsx'
 import UserGretting from './UserGreeting.jsx'
+import List from './ListRender.jsx'
 
 function App() {
 
@@ -38,6 +39,8 @@ function App() {
       <div className='d-flex justify-content-center'>
         <Button></Button>
       </div>
+
+      <List></List>
     </div>
   )
 }

@@ -19,10 +19,10 @@ Student.prototype = {
 
 }
 
-Student.defaultProps = {
-    name: "Guest",
-    age: 0,
-    isStudent: false
-}
+// Student.defaultProps = {
+//     name: "Guest",
+//     age: 0,
+//     isStudent: false
+// }
 
 export default Student

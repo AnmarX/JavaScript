@@ -1,5 +1,5 @@
 import './Style/CSS_UserGreeting.css'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 const UserGretting = (props) => {
 
@@ -17,13 +17,13 @@ const UserGretting = (props) => {
 
 
 }
-UserGretting.PropTypes = {
-    isLoggedIn: PropTypes.bool,
-    username: PropTypes.string
+UserGretting.propTypes = {
+    isLoggedIn: propTypes.bool,
+    username: propTypes.string
 }
 
-UserGretting.defaultProps = {
-    isLoggedIn: false,
-    username: "Guest"
-}
+// UserGretting.defaultProps = {
+//     isLoggedIn: false,
+//     username: "Guest"
+// }
 export default UserGretting
