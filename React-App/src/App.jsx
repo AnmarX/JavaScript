@@ -6,8 +6,26 @@ import Button from './Buttons/Button.jsx'
 import Student from './Student.jsx'
 import UserGretting from './UserGreeting.jsx'
 import List from './ListRender.jsx'
+import ButtonClickEvent from './ClickEvent.jsx'
 
 function App() {
+
+  const fruits = [
+    { id: 1, name: "beach", cal: 95 },
+    { id: 2, name: "orange", cal: 100 },
+    { id: 3, name: "banana", cal: 200 },
+    { id: 4, name: "apple", cal: 34 },
+    { id: 5, name: "coconut", cal: 82 },
+    { id: 6, name: "rreq", cal: 132 }
+  ]
+
+  const vegetables = [
+    { id: 7, name: "potato", cal: 80 },
+    { id: 8, name: "celery", cal: 10 },
+    { id: 9, name: "carrots", cal: 30 },
+    { id: 10, name: "corn", cal: 55 },
+    { id: 11, name: "brocooli", cal: 24 },
+  ]
 
   return (
     <div className='container vh-100'>
@@ -40,7 +58,15 @@ function App() {
         <Button></Button>
       </div>
 
-      <List></List>
+      {/* list render */}
+      {fruits.length > 0 ? <List items={fruits} catagory="Fruits"></List> : null}
+      {vegetables.length > 0 && <List items={vegetables} catagory="Vegetables"></List>}
+
+
+
+      {/* click event */}
+      <ButtonClickEvent></ButtonClickEvent>
+
     </div>
   )
 }
