@@ -6,7 +6,8 @@ import Button from './Buttons/Button.jsx'
 import Student from './Student.jsx'
 import UserGretting from './UserGreeting.jsx'
 import List from './ListRender.jsx'
-import ButtonClickEvent from './ClickEvent.jsx'
+import ButtonClickEvent from './ClickEvent/ClickEvent.jsx'
+import ProfilePicture from './ClickEvent/ClickEventProfilePic.jsx'
 
 function App() {
 
@@ -58,14 +59,17 @@ function App() {
         <Button></Button>
       </div>
 
-      {/* list render */}
+      {/* click event */}
       {fruits.length > 0 ? <List items={fruits} catagory="Fruits"></List> : null}
       {vegetables.length > 0 && <List items={vegetables} catagory="Vegetables"></List>}
+      {/* click event */}
 
 
 
       {/* click event */}
       <ButtonClickEvent></ButtonClickEvent>
+      <ProfilePicture></ProfilePicture>
+      {/* click event */}
 
     </div>
   )
