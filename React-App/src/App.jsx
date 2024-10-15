@@ -8,6 +8,10 @@ import UserGretting from './UserGreeting.jsx'
 import List from './ListRender.jsx'
 import ButtonClickEvent from './ClickEvent/ClickEvent.jsx'
 import ProfilePicture from './ClickEvent/ClickEventProfilePic.jsx'
+import UseState from './HooksUseState.jsx'
+import OnChangeHandler from './OnChangeEventHandle.jsx'
+import ColorPick from './ColorClicker.jsx'
+import UpdateFunction from './updaterFunction.jsx'
 
 function App() {
 
@@ -70,6 +74,25 @@ function App() {
       <ButtonClickEvent></ButtonClickEvent>
       <ProfilePicture></ProfilePicture>
       {/* click event */}
+
+      <hr />
+      {/* Hooks UseState */}
+      <UseState></UseState>
+      {/* Hooks UseState */}
+
+      <hr />
+
+      {/* Event handler onChange */}
+      <OnChangeHandler></OnChangeHandler>
+      {/* Event handler onChange */}
+
+      {/* color pick */}
+      <ColorPick></ColorPick>
+      {/* color pick */}
+
+      {/* update function */}
+      <UpdateFunction></UpdateFunction>
+      {/* update function */}
 
     </div>
   )
