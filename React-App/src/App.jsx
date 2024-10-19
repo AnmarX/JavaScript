@@ -12,6 +12,8 @@ import UseState from './HooksUseState.jsx'
 import OnChangeHandler from './OnChangeEventHandle.jsx'
 import ColorPick from './ColorClicker.jsx'
 import UpdateFunction from './updaterFunction.jsx'
+import UpdateObject from './UpdateObject.jsx'
+import UpdateArray from './UpdateArray.jsx'
 
 function App() {
 
@@ -86,13 +88,29 @@ function App() {
       <OnChangeHandler></OnChangeHandler>
       {/* Event handler onChange */}
 
+      <hr />
+
       {/* color pick */}
       <ColorPick></ColorPick>
       {/* color pick */}
 
+      <hr />
+
       {/* update function */}
       <UpdateFunction></UpdateFunction>
       {/* update function */}
+
+
+      {/* update object */}
+      <UpdateObject></UpdateObject>
+      {/* update object */}
+
+      <hr />
+
+      {/* update array */}
+      <UpdateArray></UpdateArray>
+      {/* update array */}
+
 
     </div>
   )
