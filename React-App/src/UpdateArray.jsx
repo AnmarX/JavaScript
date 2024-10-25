@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import List from "./ListRender"
 
 
 const updateArray = () => {
@@ -32,14 +31,15 @@ const updateArray = () => {
 
     }
 
-    const handleRemoveFood = () => {
+    const handleRemoveFood = (index) => {
+        setFoods(foods.filter((_, i) => i !== index))
 
     }
 
     return <div>
         <h2>List of food</h2>
         <ul>
-            {foods.map((food, index) => <li key={index}>{food}</li>)}
+            {foods.map((food, index) => <li key={index} onClick={() => handleRemoveFood(index)} style={{ cursor: "pointer" }} >{food}</li>)}
         </ul>
         <p>the added food: {selectedFood}</p>
         <input value={selectedFood} type="text" id="foodInput" placeholder="Enter Food Name" onChange={selectedFoods} />

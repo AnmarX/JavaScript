@@ -14,6 +14,7 @@ import ColorPick from './ColorClicker.jsx'
 import UpdateFunction from './updaterFunction.jsx'
 import UpdateObject from './UpdateObject.jsx'
 import UpdateArray from './UpdateArray.jsx'
+import ArrayOfObject from './UpdateArrayOfObject.jsx'
 
 function App() {
 
@@ -110,6 +111,14 @@ function App() {
       {/* update array */}
       <UpdateArray></UpdateArray>
       {/* update array */}
+
+      <hr />
+
+      {/* update array of objects */}
+      <ArrayOfObject></ArrayOfObject>
+      {/* update array of objects */}
+
+
 
 
     </div>
