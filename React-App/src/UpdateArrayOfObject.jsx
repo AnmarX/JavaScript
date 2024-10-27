@@ -8,7 +8,7 @@ const ArrayOfObject = () => {
     const [carMake, setCarMake] = useState("")
     const [carModel, setCarModel] = useState("")
 
-    const handleAddCar = () => {
+    const handleAddCar = (event) => {
         const newCar = { year: carYear, make: carMake, model: carModel }
         setCars(c => [...c, newCar])
         setCarMake("")
@@ -17,6 +17,7 @@ const ArrayOfObject = () => {
     }
 
     const handleRemoveCar = (index) => {
+        setCars(car.filter((_, i) => i !== index))
 
     }
 
@@ -39,8 +40,14 @@ const ArrayOfObject = () => {
         <div>
             <h2>List of cars objects</h2>
             <ul>
-
+                {car.map((car, index) =>
+                    //handleRemoveCar(index) if you passed is like this it will be triggred on pageload
+                    <li key={index} onClick={() => handleRemoveCar(index)}>
+                        {car.year} , {car.make} , {car.model}
+                    </li>)}
             </ul>
+
+
             {/* if you want to make a field readonly just remove the onchange and put the value from react state */}
             <input type="number" value={carYear} onChange={handleYearChange} /> <br />
 
@@ -50,7 +57,7 @@ const ArrayOfObject = () => {
             <input type="text" value={carModel} onChange={handleModelChange}
                 placeholder="Enter Car Model" /><br />
 
-            <button onClick={handleAddCar}>Add Car</button>
+            <button onClick={handleAddCar} onKeyDown={handleAddCar}>Add Car</button>
 
 
         </div>
