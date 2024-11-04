@@ -17,13 +17,20 @@
 
 
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 
 const useEffectFun = () => {
 
-    return <>
+    const [count, setCount] = useState(0)
 
+    const addCount = () => {
+        setCount(c => c + 1)
+    }
+
+    return <>
+        <p>count: {count}</p>
+        <button onClick={addCount}>Add</button>
     </>
 }
 
