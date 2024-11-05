@@ -23,14 +23,53 @@ import React, { useState, useEffect } from "react"
 const useEffectFun = () => {
 
     const [count, setCount] = useState(0)
+    const [color, setColor] = useState("green")
+
+
+    // =========
+    // 1- every re-render it will update, any thing that re-render the update will happened
+    // useEffect(() => {
+    //     document.title = `count ${count}`
+    // })
+    // =========
+
+
+
+    // =========
+    // 2- it will only update once when mouting, it will happen once
+    // useEffect(() => {
+    //     document.title = `My counter app`
+    // }, [])
+    // =========
+
+
+
+    // =========
+    // 3- it will only update once when mouting and the value updating, the code will not excute if the value didn't change
+    useEffect(() => {
+        document.title = `count ${count} ${color}`
+    }, [count])
+    // =========
+
 
     const addCount = () => {
         setCount(c => c + 1)
     }
 
+    const subCount = () => {
+        setCount(c => c - 1)
+    }
+
+    const changeColor = () => {
+        setColor(c => c === "green" ? "red" : "green")
+    }
+
     return <>
-        <p>count: {count}</p>
+        <p style={{ color: color }}>count: {count}</p>
         <button onClick={addCount}>Add</button>
+        <button onClick={subCount}>Sub</button><br />
+        <button onClick={changeColor}>Change color</button>
+
     </>
 }
 

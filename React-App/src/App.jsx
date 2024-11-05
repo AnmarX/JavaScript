@@ -15,6 +15,7 @@ import UpdateFunction from './updaterFunction.jsx'
 import UpdateObject from './UpdateObject.jsx'
 import UpdateArray from './UpdateArray.jsx'
 import ArrayOfObject from './UpdateArrayOfObject.jsx'
+import UseEffectFun from './useEffect.jsx'
 
 function App() {
 
@@ -118,7 +119,11 @@ function App() {
       <ArrayOfObject></ArrayOfObject>
       {/* update array of objects */}
 
+      <hr />
 
+      {/* use effect */}
+      <UseEffectFun></UseEffectFun>
+      {/* use effect */}
 
 
     </div>
