@@ -48,7 +48,8 @@ const useEffectFun = () => {
     // 3- it will only update once when mouting and the value updating, the code will not excute if the value didn't change
     useEffect(() => {
         document.title = `count ${count} ${color}`
-    }, [count])
+        // if count or color change the code will be excuted
+    }, [count, color])
     // =========
 
 
