@@ -4,15 +4,16 @@ const useEffectCleanUp = () => {
     const [Width, setWindowWidth] = useState(window.innerWidth);
     const [height, setWindowheight] = useState(window.innerHeight);
 
+    // Event listener to update width on window resize
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+        setWindowheight(window.innerHeight)
+    };
 
     useEffect(() => {
-        // Event listener to update width on window resize
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-            setWindowheight(window.innerHeight)
-        };
 
         window.addEventListener('resize', handleResize);
+        console.log('Add event listener');
 
         // Cleanup function to remove the event listener
         return () => {
