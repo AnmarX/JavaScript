@@ -16,6 +16,7 @@ import UpdateObject from './UpdateObject.jsx'
 import UpdateArray from './UpdateArray.jsx'
 import ArrayOfObject from './UpdateArrayOfObject.jsx'
 import UseEffectFun from './useEffect.jsx'
+import UseEffectCleanUp from './useEffectCleanUp.jsx'
 
 function App() {
 
@@ -124,6 +125,13 @@ function App() {
       {/* use effect */}
       <UseEffectFun></UseEffectFun>
       {/* use effect */}
+
+      <hr />
+
+      {/* use effect clean up */}
+      <UseEffectCleanUp></UseEffectCleanUp>
+      {/* use effect clean up */}
+
 
 
     </div>
