@@ -18,6 +18,7 @@ import ArrayOfObject from './UpdateArrayOfObject.jsx'
 import UseEffectFun from './useEffect.jsx'
 import UseEffectCleanUp from './useEffectCleanUp.jsx'
 import ComponentA from './useContext/ComponentA.jsx'
+import UseRef from './useRef.jsx'
 
 
 function App() {
@@ -139,6 +140,13 @@ function App() {
       {/* use context */}
       <ComponentA />
       {/* use context */}
+
+      <hr />
+
+      {/* useRef */}
+      <UseRef />
+      {/* useRef */}
+
 
 
 
