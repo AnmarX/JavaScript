@@ -20,6 +20,8 @@ const UseRef = () => {
 
     useEffect(() => {
         console.log("re-render")
+        // will return an object of current
+        console.log(refInput1)
     })
 
     const handleClick1 = () => {
